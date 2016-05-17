@@ -36,12 +36,12 @@ CTECArray<Type>::CTECArray(int size)
 template <class Type>
 CTECArray<Type>::~CTECArray()
 {
-    ArrayNode<Type> * deleteMe = head;
+    ArrayNode<Type> *  deleteMe = head;
     for (int index = 0; index < size; index++)
 	{
 	if(deleteMe->getNext())
 	    {
-         head delete->getNext();
+        head = deleteMe->getNext();
 	    deleteMe->setNext(nullptr);
 	    {
 		delete deleteMe;
@@ -49,7 +49,6 @@ CTECArray<Type>::~CTECArray()
 	    }
 
 	    delete head;
-
 	    }
 	}
 }
@@ -113,12 +112,13 @@ void CTECArray<Type>::set(int position, const Type& vlaue)
      4)If there, return index, else go to next
      5)Return index
   */
-    template <class Type>
-    int CTECArray<Type> :: indexOf(Type searchValue)
+template <class Type>
+int CTECArray<Type>::indexOf(Type searchValue)
     {
         assert(this->size > 0);
-        int indexNotFound = -1;
         ArrayNode<Type> * current = head;
+        int indexNotFound = -1;
+        
         for(int index = 0; index < this->size; index++)
         {
             if(current->getValue() == searchValue)

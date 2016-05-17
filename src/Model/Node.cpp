@@ -12,13 +12,13 @@
 template <class Type>
 Node<Type>::Node()
 {
-	value = 0;
+    this->value = value;
 	pointers = nullptr;
 
 }
 
 template <class Type>
-Node<Type>::Node(Type vvalue)
+Node<Type>::Node(Type value)
 {
 	this->value = value;
 	pointers = nullptr;

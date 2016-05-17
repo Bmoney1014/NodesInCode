@@ -10,10 +10,9 @@
 #include <iostream>
 
 template <class Type>
-Node<Type>::Node()
+Node<Type>::Node() : Node<Type>()
 {
-    value = 0;
-    pointers = nullptr;
+    this->next = nullptr;
 }
 
 template <class Type>

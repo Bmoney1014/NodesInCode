@@ -20,7 +20,7 @@ public:
 	virtual ~Node();
 	Type getValue();
 	void setValue(const Type& value);
-	Node * getPointers();
+    Node * getPointers();
 };
 
 #endif /* NODE_H_ */
