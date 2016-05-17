@@ -7,3 +7,31 @@
 //
 
 #include "BinaryTree.hpp"
+using namespace CTECData;
+
+template<class Type>
+BinaryTree<Type>:: BinaryTree()
+{
+    
+}
+
+template<class Type>
+BinaryTree<Type>::~BinaryTree()
+{
+    
+}
+
+template<class Type>
+int BinaryTree<Type>::remove(BinaryTree<Type> currentNode)
+{
+    
+}
+
+template<class Type>
+int BinaryTree<Type>::contains(BinaryTree<Type> currentNode)
+{
+    
+}
+
+
+

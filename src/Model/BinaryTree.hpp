@@ -10,5 +10,20 @@
 #define BinaryTree_hpp
 
 #include <stdio.h>
+namespace CTECData
+{
+    template<class Type>
+    class BinaryTree
+    {
+    private:
+        int calculateSize;
+    public:
+        BinaryTree();
+        ~BinaryTree();
+        int remove(BinaryTree<Type> currentNode);
+        int contains(BinaryTree<Type> currentNode);
+    };
+}
+
 
 #endif /* BinaryTree_hpp */

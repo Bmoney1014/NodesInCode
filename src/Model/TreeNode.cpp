@@ -34,6 +34,20 @@ TreeNode<Type> :: TreeNode(const Type& value, TreeNode<Type> * parent) : Node<Ty
     this->parent = parent;
 }
 
+template<class Type>
+TreeNode<Type> *  TreeNode<Type>::getLeftChild()
+{
+    return getLeftChild;
+}
 
+template<class Type>
+TreeNode<Type> * TreeNode<Type>::getRightChild()
+{
+    return getRightChild;
+}
 
-
+template<class Type>
+TreeNode<Type> * TreeNode<Type>::getParent()
+{
+    return getParent;
+}

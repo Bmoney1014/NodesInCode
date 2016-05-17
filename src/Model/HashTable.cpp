@@ -37,13 +37,13 @@ int HashTable<Type> :: getSize()
 }
 
 template <class Type>
-void HashTable<Type> addToTable(HashNode<Type> currentNode)
+void HashTable<Type>::addToTable(HashNode<Type> currentNode)
 {
-    if(this->size/this->tableCapaciy >= thi->effeciencyPercentage)
+    if(this->size/this->tableCapaciy >= this->effeciencyPercentage)
     {
-        updateTableCapacity;
+        return updateTableCapacity;
     }
-    //Find whe to put the value
+    //Find where to put the value
     int positionToInsert = findPosition(currentNode);
     //If the spot is empty, make a new list and add the node
     if(tableStorage[positionToInsert] == nullptr)
@@ -247,7 +247,7 @@ int HashTable<Type> :: handleCollision(HashNode<Type> currentNode)
 {
     int reHashedPosition = findPosition(currentNode);
     int random = rand(capacity);
-    reHshedPosition = random + (reHashedPosition * reHashedPosition) % capacity;
+    reHashedPosition = random + (reHashedPosition * reHashedPosition) % capacity;
     
-    return reHashedCapacity;
+    return chainedCapacity;
 }

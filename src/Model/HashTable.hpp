@@ -26,18 +26,15 @@ namespace CTECData
         CTECList<HashNode <Type>> * tableStorage;
         void updateChainedCapacity();
         
-        double efficiencyPercentage;
+        double efficiencyPercentage;//
         
         int findPosition(HashNode<Type> currentNode);//
-        int handleCollision(HashNode<Type>  currentNode);
+        int handleCollision(HashNode<Type>  currentNode); //
         int tableCapacity;
         int tableSize;
-        double efficiencyPercentage;
-
-        int handleCollision(HashNode<Type>  currentNode);
         
         void updateSize();//
-        void updateTableCapacity();
+        void updateTableCapacity(); //
         
         int getNextPrime();//
         bool isPrime(int candidateNumber);//
@@ -48,6 +45,7 @@ namespace CTECData
         void add(HashNode<Type> currentNode);//
         bool remove(HashNode<Type> currentNode);//
         bool contains(HashNode<Type> currentNode);//
+        void addToTable(HashNode<Type> currentNode); //
     };
 }
 
