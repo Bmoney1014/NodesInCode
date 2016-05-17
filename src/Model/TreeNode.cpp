@@ -41,13 +41,30 @@ TreeNode<Type> *  TreeNode<Type>::getLeftChild()
 }
 
 template<class Type>
+void TreeNode<Type>::setLeftChild(TreeNode<Type> * leftChild)
+{
+    return setLeftChild;
+}
+template<class Type>
 TreeNode<Type> * TreeNode<Type>::getRightChild()
 {
     return getRightChild;
 }
 
 template<class Type>
+void TreeNode<Type>::setRightChild(TreeNode<Type> * rightChild)
+{
+    return setRightChild;
+}
+
+template<class Type>
 TreeNode<Type> * TreeNode<Type>::getParent()
 {
     return getParent;
+}
+
+template<class Type>
+void TreeNode<Type>:: setParent(TreeNode<Type> * parent)
+{
+    return setParent;
 }
